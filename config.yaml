@@ -1,0 +1,9 @@
+options:
+    install_sources: 
+       type: string
+       default: deb http://repos.mesosphere.com/ubuntu xenial-unstable main
+       description: "apt repository to fetch beats from"    
+    install_keys:
+       type: string
+       default: E56151BF
+       description: gpg key

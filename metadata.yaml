@@ -1,0 +1,21 @@
+name: layer-mesos-agent
+summary: Mesos Agent Charm
+maintainer: Tom Barber <Tom.Barber@tom-laptop2>
+description: |
+  Agent charm for running mesos
+tags:
+  # Replace "misc" with one or more whitelisted tags from this list:
+  # https://jujucharms.com/docs/stable/authors-charm-metadata
+  - misc
+subordinate: false
+resources:
+   software:
+      type: file
+      filename: mesos.zip
+      description: "The Mesos Zipfile"
+series:
+  - xenial
+requires:
+  zookeeper:
+    interface: zookeeper
+
